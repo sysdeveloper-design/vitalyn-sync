@@ -1,30 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Vitalyn Sync</title>
+<meta charset="UTF-8">
+<title>Vitalyn Sync</title>
+
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+    background: #f5f7fb;
+    margin: 0;
+    color: #1f2937;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  }
+
+  h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    margin-top: 26px;
+    font-size: 20px;
+  }
+
+  p, li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #374151;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 6px 10px;
+    background: #e0f2fe;
+    color: #0369a1;
+    border-radius: 999px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .flow {
+    background: #f3f4f6;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 13px;
+  }
+
+  .footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #6b7280;
+  }
+</style>
+
 </head>
+
 <body>
+<div class="container">
+<div class="card">
+
+<span class="badge">Health Data Sync App</span>
 
 <h1>Vitalyn Sync</h1>
 
 <p>
-Vitalyn Sync is a health data synchronization application that connects to
-Huawei Health Kit and transfers user-approved health data to a secure backend.
+Vitalyn Sync is a health data synchronization application using Huawei Health Kit.
+It enables users to securely transfer their health data for personal analytics.
 </p>
 
 <h2>Purpose</h2>
 <p>
-The application enables users to synchronize their health data for personal analytics and visualization.
+The application synchronizes health data for visualization and personal insights.
 No medical diagnosis or treatment is provided.
 </p>
 
 <h2>Data Flow</h2>
-<p>
-Huawei Health App → Huawei Health Kit → Vitalyn Sync App → Secure Backend
-</p>
+<div class="flow">
+Huawei Health App → Health Kit → Vitalyn Sync → Secure Backend
+</div>
 
-<h2>Collected Data</h2>
+<h2>Data Types</h2>
 <ul>
   <li>Steps</li>
   <li>Distance</li>
@@ -41,15 +122,11 @@ Huawei Health App → Huawei Health Kit → Vitalyn Sync App → Secure Backend
   <li><a href="terms.html">Terms of Service</a></li>
 </ul>
 
-<h2>Consent</h2>
-<p>
-All data access is performed only after explicit user consent via Huawei Health Kit permissions.
-</p>
+<div class="footer">
+Contact: sysdevelopers@proton.me
+</div>
 
-<h2>Contact</h2>
-<p>
-sysdevelopers@proton.me
-</p>
-
+</div>
+</div>
 </body>
 </html>
